@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 기본 구조 */
+      .wrap {
+        max-width: 1280px;
+        background: #f8f8f8;
+      }
+
+      /* 가로 스크롤 적용 */
+      .scroll__wrap {
+        overflow-x: auto;
+        white-space: nowrap;
+        font-size: 0;
+        display: flex;
+      }
+      .scroll--element {
+        display: inline-block;
+        width: 305px;
+        height: 434px;
+        background: #fff;
+      }
+      .scroll--element + .scroll--element {
+        margin-left: 20px;
+      }
+
+      .scroll__wrap::-webkit-scrollbar {
+        width: 7px; /* 스크롤바의 너비 */
+      }
+
+      .scroll__wrap::-webkit-scrollbar-thumb {
+        height: 30%; /*스크롤바의 길이 */
+        background: #111; /* 스크롤바의 색상 */
+
+        border-radius: 7px;
+      }
+
+      .scroll__wrap::-webkit-scrollbar-track {
+        background: #c4c4c4; /*스크롤바 뒷 배경 색상*/
+      }
+
+      .scroll--element .text {
+        width: 305px;
+        height: 305px;
+        background-color: #c4c4c4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap center_box">
+      <ul class="scroll__wrap">
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        <li class="scroll--element">
+          <div class="text"></div>
+        </li>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
