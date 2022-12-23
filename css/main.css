@@ -120,30 +120,24 @@ body {
   margin-left: 48px;
 }
 
-.product_new {
-  height: 507px;
+/* 기본 구조 */
+.wrap {
+  background: #fff;
   margin-top: 130px;
-  position: relative;
 }
 
-.product_new h2 {
+.wrap h1 {
   font-size: 30px;
   margin-bottom: 26px;
 }
 
-/* 기본 구조 */
-.wrap {
-  width: 1280px;
-  background: #fff;
-}
-
 /* 가로 스크롤 적용 */
-.scroll__wrap {
+.wrap .scroll__wrap {
   overflow-x: auto;
   white-space: nowrap;
   height: 449px;
 }
-.scroll--element {
+.wrap .scroll--element {
   display: inline-block;
   width: 305px;
   height: 305px;
@@ -151,75 +145,32 @@ body {
   margin-right: 20px;
 }
 
-.scroll__wrap::-webkit-scrollbar {
+.wrap .scroll__wrap::-webkit-scrollbar {
   height: 7px; /* 스크롤바의 너비 */
 }
 
-.scroll__wrap::-webkit-scrollbar-thumb {
+.wrap .scroll__wrap::-webkit-scrollbar-thumb {
   width: 305px; /*스크롤바의 길이 */
   background: #111; /* 스크롤바의 색상 */
 }
 
-.scroll__wrap::-webkit-scrollbar-track {
+.wrap .scroll__wrap::-webkit-scrollbar-track {
   background: #c4c4c4; /*스크롤바 뒷 배경 색상*/
 }
 
-.scroll--element .text {
+.wrap .scroll--element .text {
   width: 305px;
   height: 129px;
   background-color: #fff;
   display: inline-block;
   margin-top: 305px;
   margin-right: 20px;
-}
-
-.product_top {
-  height: 507px;
-  margin-top: 130px;
-  position: relative;
-}
-
-.product_top h2 {
-  font-size: 30px;
-  margin-bottom: 26px;
-}
-
-.product_top ul {
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-}
-
-.product_top ul li .box {
-  width: 305px;
-  height: 305px;
-  background-color: #c4c4c4;
-}
-
-.product_top ul li h3 {
   font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrap .scroll--element .text h3 {
   margin-top: 10px;
-}
-
-.product_top ul li p {
-  font-size: 18px;
-  margin-bottom: 63px;
-}
-
-.product_top .line {
-  width: 305px;
-  height: 7px;
-  background-color: #111;
-  position: absolute;
-  bottom: 0;
-}
-
-.product_top .long_line {
-  width: 1280px;
-  height: 7px;
-  background-color: #c4c4c4;
-  position: absolute;
-  bottom: 0px;
 }
 
 .infos {
