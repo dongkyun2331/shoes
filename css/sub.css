@@ -77,10 +77,32 @@ body {
   width: 632px;
   height: 632px;
   background-color: #e1e1e1;
+  position: relative;
 }
 
-.product_new .product img {
-  margin: 179px 103px 227px 135px;
+.product_new .product_img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.product_new .product .btns {
+  position: absolute;
+  bottom: 31px;
+  right: 42px;
+  display: flex;
+  gap: 10px;
+}
+
+.product_new .product .btns a {
+  display: block;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
 }
 
 .product_new .product_name {
